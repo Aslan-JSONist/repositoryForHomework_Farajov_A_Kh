@@ -1,0 +1,46 @@
+# Игнорирование сборочных директорий
+target/
+build/
+
+# Игнорирование файлов .class
+*.class
+
+# Игнорирование файлов IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Игнорирование файлов логов и временных файлов
+logs/
+*.log
+*.tmp
+temp/
+
+# Игнорирование данных аутентификации и конфигураций
+.env
+*.env
+credentials.properties
+
+# Игнорирование IDE-специфичных файлов
+# IntelliJ IDEA
+.idea/
+*.iml
+.idea/workspace.xml
+.idea/gradle.xml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Maven
+target/
+pom.xml
+
+# Gradle
+build/
+.gradle/
+gradlew
+gradlew.bat

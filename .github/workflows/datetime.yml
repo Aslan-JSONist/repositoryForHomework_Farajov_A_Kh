@@ -1,0 +1,21 @@
+name: Display DateTime
+
+on:
+  push:
+    branches: [ '*' ]  # запускается при пуше в любую ветку
+  pull_request:
+    branches: [ '*' ]  # запускается при создании/обновлении PR
+
+jobs:
+  show-datetime:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Display current date and time
+      run: |
+        echo "Текущая дата и время: $(date)"
+        echo "Запущено для события: ${{ github.event_name }}"
+        echo "Ветка: ${{ github.ref }}"
